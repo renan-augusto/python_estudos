@@ -9,6 +9,12 @@ class Animal:
   def fala(self): 
     print("Eu sou um {} e sei {}".format(self.esp.lower(), self.ling.lower()))
   
+
+class Ave(Animal):  #importante lembrar que a classe ave nada mais é que uma subclasse da classe animal
+  'representa uma ave'
+  def fala(self):
+    'exibe sons da ave'
+    print('{}!'.format(self.linguagem)*3)
   
   
   

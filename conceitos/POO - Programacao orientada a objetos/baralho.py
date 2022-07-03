@@ -25,3 +25,10 @@ class Baralho:
   
   def suffle(self):
     shuffle(self.baralho)
+    
+  def __repr__(self):
+    return "Carta ({}, {})".format(self.valor, self.naipe)
+  
+  def __eq__(self, outro):
+    return self.valor == outro.valor and self.naipe == outro.naipe
+  
